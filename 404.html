@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | My Natural Hairstyles</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-brown': '#3d2b1f',
+                        'brand-tan': '#c4a484',
+                        'brand-cream': '#fdfaf5',
+                        'brand-accent': '#8b5e3c',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-cream text-brand-brown font-sans antialiased min-h-screen flex items-center justify-center p-6">
+
+    <div class="max-w-xl w-full bg-white rounded-3xl shadow-xl overflow-hidden border border-brand-tan/20">
+        <!-- Top Decorative Bar -->
+        <div class="h-2 bg-gradient-to-r from-brand-brown via-brand-tan to-brand-brown"></div>
+
+        <div class="p-8 md:p-12 text-center">
+            <!-- 404 Illustration/Icon -->
+            <div class="mb-8 flex justify-center">
+                <div class="bg-brand-cream p-5 rounded-full ring-8 ring-brand-cream/50 relative">
+                    <span class="text-6xl font-serif font-bold text-brand-brown">404</span>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="font-serif text-4xl md:text-5xl mb-6 leading-tight">Oops! This page is tucked away.</h1>
+            
+            <div class="space-y-4 mb-10">
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    We couldn't find the page you're looking for. It might have been moved, renamed, or perhaps it never existed in the first place.
+                </p>
+                <p class="text-gray-500">
+                    Don't worry, we can help you find your way back to the community.
+                </p>
+            </div>
+
+            <!-- Primary Actions -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+                <a href="https://mynaturalhairstyles.com" class="w-full sm:w-auto inline-block bg-brand-brown text-white px-10 py-4 rounded-xl font-bold hover:bg-brand-accent transform hover:-translate-y-1 transition-all duration-200 shadow-lg shadow-brand-brown/20">
+                    Back to Home
+                </a>
+                <button onclick="window.history.back()" class="w-full sm:w-auto inline-block bg-white text-brand-brown border-2 border-brand-brown px-10 py-4 rounded-xl font-bold hover:bg-gray-50 transition-all duration-200">
+                    Go Back
+                </button>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-gray-50 text-xs text-gray-400">
+                <p>&copy; 2026 My Natural Hairstyles. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
